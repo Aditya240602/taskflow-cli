@@ -10,6 +10,13 @@ A color-coded, persistent task manager for the terminal, written in modern C++17
   |_|\__,_|___/_|\_\_| |_|\___/ \_/\_/  \____|_____|___|
 ```
 
+## Screenshots
+
+| Splash screen & menu | Adding a task | Task list |
+|---|---|---|
+| ![Splash screen and main menu](screenshots/splash-and-menu.png) | ![Adding a task](screenshots/add-task.png) | ![Color-coded task list](screenshots/task-list.png) |
+
+
 ## Features
 
 - **Full CRUD** — add, edit, complete, and delete tasks
