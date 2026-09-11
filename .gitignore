@@ -1,0 +1,7 @@
+build/
+*.o
+taskflow
+taskflow_tests
+tasks.json
+tasks.csv
+*.exe
