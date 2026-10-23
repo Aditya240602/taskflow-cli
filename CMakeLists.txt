@@ -8,7 +8,12 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-add_compile_options(-Wall -Wextra)
+# Compiler-specific warning flags (MSVC does not understand -Wall/-Wextra)
+if(MSVC)
+    add_compile_options(/W4 /utf-8)
+else()
+    add_compile_options(-Wall -Wextra)
+endif()
 
 # Core library (everything except main.cpp) so the test binary can link
 # against the same logic the CLI uses.
